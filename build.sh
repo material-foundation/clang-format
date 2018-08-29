@@ -44,3 +44,8 @@ cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../llvm
 make
 
 bin/clang-format -version
+
+echo "You can now create a new release."
+echo "1. Visit https://github.com/material-foundation/clang-format/releases/new"
+echo "2. Upload bin/clang-format as a binary attachment."
+echo "3. Name the release and tag r$REV"
