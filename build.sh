@@ -20,7 +20,7 @@ if [ ! -d llvm ]; then
   svn co -q https://llvm.org/svn/llvm-project/llvm/trunk llvm -r $REV
 else
   cd llvm
-  svn update -r$REV
+  svn update -r $REV
   cd ../
 fi
 
@@ -29,7 +29,7 @@ if [ ! -d clang ]; then
   svn co -q https://llvm.org/svn/llvm-project/cfe/trunk clang -r $REV
 else
   cd clang
-  svn update -r$REV
+  svn update -r $REV
   cd ../
 fi
 cd ../..
