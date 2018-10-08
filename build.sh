@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-REV=340070
+REV=343360
 
 if [ ! -d llvm ]; then
   svn co -q https://llvm.org/svn/llvm-project/llvm/trunk llvm -r $REV
