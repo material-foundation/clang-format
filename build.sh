@@ -50,5 +50,8 @@ bin/clang-format -version
 
 echo "You can now create a new release."
 echo "1. Visit https://github.com/material-foundation/clang-format/releases/new"
-echo "2. Upload bin/clang-format as a binary attachment."
+echo "2. Upload build/bin/clang-format as a binary attachment."
 echo "3. Name the release and tag r$REV"
+echo "4. Add the following to the release description:"
+echo
+echo "   SHA256: $(openssl sha -sha256 build/bin/clang-format)"
